@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Basic_Needs -->
+    <meta charset="utf-8">
+    <title>Blackcat: CSS Design Boilerplate</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/blackcat.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title></title>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <div class="section-container-top">
+          <div class="section-top">
+            <ul>
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+              <li><a>Item 3</a></li>
+              <li><a>Item 4</a></li>
+              <li><a>Item 5</a></li>
+              <li class="nav-space"></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="section-container-top">
+        <div class="section-top">
+          <div class="blackcat-container">
+            <img class="blackcat" src="icons/cat_icon.png">
+          </div>
+          <h3 class="center">Meet Blackcat</h3>
+          <h5 class="center">
+            A simple, designer-friendly CSS library.
+          </h5>
+          <div class="icon-container">
+            <div class="icon">
+              <img src="icons/scale_icon.png">
+              <h6>Lightweight</h6>
+            </div>
+            <div class="icon">
+              <img src="icons/designer_icon.png">
+              <h6>Designer-friendly</h6>
+            </div>
+            <div class="icon">
+              <img src="icons/checkmark_icon.png">
+              <h6>Ready to go!</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="main-heading">What is Blackcat</h2>
+          <p>Blackcat is a simple CSS styling toolkit which can be utilized in styling a handful of HTML elements.</p>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="main-heading">Layout</h2>
+          <p>Blackcat's main layout consists of 'section-containers' and 'sections'. Having sections within section-containers comes in especially handy when in comes to adjusting the margin and alignment of elements. Below is the section you're reading now.</p>
+          <pre class="code-box">
+<b>HTML:</b>
+
+  &lt;div class="section-container">
+    &lt;div class="section">
+      &lt;div class="heading">
+        &lt;h2>Layout&lt;/h2>
+        &lt;p>Blackcat's main layout consists...&lt;/p>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+          </pre>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="main-heading">The Grid</h2>
+          <p>The grid is a 12-column fluid grid, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser.</p>
+          <div class="grid-container">
+            <div class="grid-horizontal-example">
+              <div class="one_of_twelve"><p>One</p></div>
+              <div class="grid-spacer"></div>
+              <div class="eleven_of_twelve"><p>Eleven</p></div>
+            </div>
+            <div class="grid-horizontal-example">
+              <div class="two_of_twelve"><p>Two</p></div>
+              <div class="grid-spacer"></div>
+              <div class="ten_of_twelve"><p>Ten</p></div>
+            </div>
+            <div class="grid-horizontal-example">
+              <div class="three_of_twelve"><p>Three</p></div>
+              <div class="grid-spacer"></div>
+              <div class="nine_of_twelve"><p>Nine</p></div>
+            </div>
+            <div class="grid-horizontal-example">
+              <div class="four_of_twelve"><p>Four</p></div>
+              <div class="grid-spacer"></div>
+              <div class="eight_of_twelve"><p>Eight</p></div>
+            </div>
+            <div class="grid-horizontal-example">
+              <div class="five_of_twelve"><p>Five</p></div>
+              <div class="grid-spacer"></div>
+              <div class="seven_of_twelve"><p>Seven</p></div>
+            </div>
+            <div class="grid-horizontal-example">
+              <div class="six_of_twelve"><p>Six</p></div>
+              <div class="grid-spacer"></div>
+              <div class="six_of_twelve"><p>Six</p></div>
+            </div>
+            <div class="grid-horizontal-example">
+              <div class="seven_of_twelve"><p>Seven</p></div>
+              <div class="grid-spacer"></div>
+              <div class="five_of_twelve"><p>Five</p></div>
+            </div>
+            <div class="grid-horizontal-example">
+              <div class="eight_of_twelve"><p>Eight</p></div>
+              <div class="grid-spacer"></div>
+              <div class="four_of_twelve"><p>Four</p></div>
+            </div>
+            <div class="grid-horizontal-example">
+              <div class="nine_of_twelve"><p>Nine</p></div>
+              <div class="grid-spacer"></div>
+              <div class="three_of_twelve"><p>Three</p></div>
+            </div>
+            <div class="grid-horizontal-example">
+              <div class="ten_of_twelve"><p>Ten</p></div>
+              <div class="grid-spacer"></div>
+              <div class="two_of_twelve"><p>Two</p></div>
+            </div>
+            <div class="grid-horizontal-example">
+              <div class="eleven_of_twelve"><p>Eleven</p></div>
+              <div class="grid-spacer"></div>
+              <div class="one_of_twelve"><p>One</p></div>
+            </div>
+          </div>
+
+          <pre class="code-box">
+<b>Inside a &lt;div class="grid-horizontal">, the grid is set up in divs with classes 'one_of_twelve' <br>through 'eleven_of_twelve'.</b>
+
+  &lt;div class="grid-horizontal">
+    &lt;div class="one_of_twelve&lt;/div>
+    &lt;div class="eleven_of_twelve">&lt;/div>
+  &lt;/div>
+
+
+<b>The grid can be set up anyway you see fit, as long as the first numbers of each class add up <br>to twelve.</b>
+
+  &lt;div class="grid-horizontal">
+    &lt;div class="one_of_twelve&lt;/div>
+    &lt;div class="three_of_twelve&lt;/div>
+    &lt;div class="five_of_twelve">&lt;/div>
+    &lt;div class="three_of_twelve">&lt;/div>
+  &lt;/div>
+
+  <b>1 + 3 + 5 + 3 = 12</b>
+          </pre>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="main-heading">Typography</h2>
+          <p>Type is all set with 'ems', so font-sizes and spacial relationships can be responsively sized based on a single HTML font-size property. All elements are base 16px, meaning that 1em is eqivelant to 16px, while 2em is equivilant to 32px and so on. Some basic elements included are:</p>
+          <ul>
+            <li><a src='#'>anchors</a></li>
+            <li><strong>strong</strong></li>
+            <li><i>italic</i></li>
+            <li><u>underline</u></li>
+            <li><blockquote>"Blockquote"</blockquote></li>
+          </ul>
+          <p>The typography base is Roboto served by Google, set at .9em (14.5px) over a 1.75em line height (28px).
+          <p>The headings base is Montserrat, also served by Google. Headings create a family of distinct sizes each with specific letter-spacing, line-height, and margins.</p>
+          <div class="heading_examples">
+            <h1>Heading One</h1>
+            <h2>Heading Two</h2>
+            <h3>Heading Three</h3>
+            <h4>Heading Four</h4>
+            <h5>Heading Five</h5>
+            <h6>Heading Six</h6>
+          </div>
+          <pre class="code-box">
+<b>Base type size:</b>
+
+  &lt;p>The base type is 15px over 1.6 line height (24px)&lt;/p>
+
+<b>Other styled text tags:</b>
+
+  &lt;strong>Bolded&lt;/strong>
+  &lt;em>Italicized&lt;/em>
+  &lt;a>Colored&lt;/a>
+  &lt;u>Underlined&lt;/u>
+  &lt;u>Blockquote&lt;/u>
+
+<b>Standard Headings:</b>
+
+  &lt;h1>Heading&lt;/h1>
+  &lt;h2>Heading&lt;/h2>
+  &lt;h3>Heading&lt;/h3>
+  &lt;h4>Heading&lt;/h4>
+  &lt;h5>Heading&lt;/h5>
+  &lt;h6>Heading&lt;/h6>
+          </pre>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="main-heading">Images</h2>
+          <p>Images, by default, are set to appear 80% of the width of their container, while height auto-adjusts. Below, one image is stretched across the entire 'section' div, and below that, three images are stretched across the grid.</p>
+          <img class="img-example" src="images/cat_img.png">
+          <div class="grid-horizontal-img">
+            <div class="four_of_twelve-img"><p><img class="img-example" src="images/cat_img.png"></p></div>
+            <div class="four_of_twelve-img"><p><img class="img-example" src="images/cat_img.png"></p></div>
+            <div class="four_of_twelve-img"><p><img class="img-example" src="images/cat_img.png"></p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="main-heading">Buttons</h2>
+          <p>Buttons come in three basic styles, and two colors schemes. Each button will change upon hover.</p>
+
+          <div class="grid-horizontal-button">
+            <div class="three_of_twelve-button">
+              <button class="button-one">button-one</button>
+            </div>
+            <div class="three_of_twelve-button">
+              <button class="button-four">button-four</button>
+            </div>
+          </div>
+
+          <div class="grid-horizontal-button">
+            <div class="three_of_twelve-button">
+              <button class="button-two">button-two</button>
+            </div>
+            <div class="three_of_twelve-button">
+              <button class="button-five">button-five</button>
+            </div>
+          </div>
+
+          <div class="grid-horizontal-button">
+            <div class="three_of_twelve-button">
+              <button class="button-three">button-three</button>
+            </div>
+            <div class="three_of_twelve-button">
+              <button class="button-six">button-six</button>
+            </div>
+          </div>
+
+          <pre class="code-box">
+<b>Each button style is based on class name:</b>
+
+  &lt;button class="button-one">button-one&lt;/button>
+  &lt;button class="button-two">button-two&lt;/button>
+  &lt;button class="button-three">button-three&lt;/button>
+  &lt;button class="button-four">button-four&lt;/button>
+  &lt;button class="button-five">button-five&lt;/button>
+  &lt;button class="button-six">button-six&lt;/button>
+          </pre>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="main-heading">Lists</h2>
+
+          <div class="grid-horizontal-list">
+            <div class="six_of_twelve-list">
+              <ul>
+                <li>This is an unordered list</li>
+                <li>Unordered lists have their own styles in Blackcat</li>
+                <ul>
+                  <li>This is what a nested item looks like</li>
+                  <li>Pretty cool ehh?</li>
+                </ul>
+                <li>Here's one more unordered list item because why not?</li>
+              </ul>
+            </div>
+            <div class="six_of_twelve-spacer"></div>
+            <div class="six_of_twelve-list">
+              <ol>
+                <li>This is an ordered list</li>
+                <li>Ordered lists have the same styles as unordered lists</li>
+                <ol>
+                  <li>This is what a nested ordered list item looks like</li>
+                </ol>
+                <ul>
+                  <li>You can nest unordered lists in ordered lists and vice-versa</li>
+                </ul>
+                <li>One more ordered list item just for fun</li>
+              </ol>
+            </div>
+          </div>
+          <pre class="code-box">
+<b>Easily substitute any &lt;ul> or &lt;ol> to modify any list to your liking.</b>
+
+  &lt;ul>
+    &lt;li>Item 1&lt;/li>
+    &lt;li>Item 2&lt;/li>
+    &lt;ul>
+      &lt;li>Item 2-1&lt;/li>
+      &lt;li>Item 2-2&lt;/li>
+    &lt;/ul>
+    &lt;li>Item 3&lt;/li>
+          </pre>
+        </div>
+      </div>
+
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="main-heading">Tables</h2>
+          <p>Be sure to use properly formed table markup with &lt;thead> for the heading and &lt;tbody> for the body when building a table.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+              </tr>
+              <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <pre class="code-box">
+<b>HTML:</b>
+
+  &lt;table>
+    &lt;thead>
+      &lt;tr>
+        &lt;th>Company&lt;/th>
+        &lt;th>Contact&lt;/th>
+        &lt;th>Country&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+      &lt;tr>
+        &lt;td>Alfreds Futterkiste&lt;/td>
+        &lt;td>Maria Anders&lt;/td>
+        &lt;td>Germany&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Centro comercial Moctezuma&lt;/td>
+        &lt;td>Francisco Chang&lt;/td>
+        &lt;td>Mexico&lt;/td>
+      &lt;/tr>
+      &lt;tr>
+        &lt;td>Ernst Handel&lt;/td>
+        &lt;td>Roland Mendel&lt;/td>
+        &lt;td>Austria&lt;/td>
+      &lt;/tr>
+    &lt;/tbody>
+  &lt;/table>
+          </pre>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="main-heading">Forms</h2>
+          <p>Forms are all divided into rows, which can be split into samller sections using the grid. The most common way to divide rows is in half, using the "six_of_twelve" class. Rows with elements spanning the entire width of the container use the "twelve_of_twelve" class</p>
+
+          <form>
+            <legend><h5>Form Heading</h5></legend>
+
+              <div class="form-row">
+                <div class="six_of_twelve-form">
+                  <label class="text-label" for="text-input">
+                    Name:
+                  </label> <br>
+                  <input class="text-input" id="text-input" type="text" placeholder="Enter your name">
+                </div>
+                <div class="six_of_twelve-form">
+                  <label class="text-label" for="text-input">Email:</label> <br>
+                  <input class="text-input" id="text-input" type="text" placeholder="example@mailbox.com">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="six_of_twelve-form">
+                  <label class="text-label" for="select-field">
+                    Select field:
+                  </label>
+                  <select class="text-input" id="select-field">
+                    <br>
+                    <option selected="selected">Option 01</option>
+                    <option>Option 02</option>
+                    <option>Option 03</option>
+                    <option>Option 04</option>
+                  </select>
+                </div>
+                <div class="six_of_twelve-form">
+                </div>
+              </div>
+
+              <div class="form-row">
+                  <div class="six_of_twelve-form">
+                    <label for="radio-input" class="text-label"> Preferred contact method:
+                    </label>
+                    <br>
+                  <div class="radio-input">
+                    <input class="radio-button" id="radio-input" type="radio" name="phone"> Phone
+                    <input class="radio-button" id="radio-input" type="radio" name="text"> Text
+                    <input class="radio-button" id="radio-input" type="radio" name="email"> Email
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="twelve_of_twelve">
+                  <label class="text-label" for="text-area">Message:</label> <br>
+                  <textarea class="text-area" id="text-area" name="text-area" cols="" rows="4" placeholder="Enter your message">
+                  </textarea>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="checkbox-input" class="checked">
+                  <input id="checkbox-input" type="checkbox"> I have read and agree to the styles above
+                </label>
+              </div>
+
+              <div class="form-row">
+                <button class="button-five">Submit</button>
+              </div>
+
+            </form>
+
+            <pre class="code-box">
+<b>Forms are created with the 'form' tag and titled with the 'legend' tag. Start your form rows <br>after the closing legend tag: </b>
+
+  &lt;form>
+    &lt;legend>
+      &lt;h5>
+        Form Heading
+      &lt;/h5>
+    &lt;/legend>
+    &lt;div class="form-row">
+    &lt;/div>
+  &lt;/form>
+
+<b>Create two text inputs across the same row:</b>
+
+  &lt;div class="form-row">
+    &lt;div class="six_of_twelve">
+      &lt;label for="text-input" class="text-label">Name:&lt;/label> &lt;br>
+      &lt;input class="text-input" id="text-input" type="text" placeholder="Enter your name">
+    &lt;/div>
+    &lt;div class="six_of_twelve">
+      &lt;label class="text-label" for="text-input">Email:&lt;/label> &lt;br>
+      &lt;input class="text-input" id="text-input" type="text" placeholder="example@mailbox.com">
+    &lt;/div>
+  &lt;/div>
+
+<b>Create a dropdown menu across half a row:</b>
+
+  &lt;div class="form-row">
+    &lt;div class="six_of_twelve">
+      &lt;label class="text-label" for="select-field">Select field:&lt;/label>
+      &lt;select class="text-input" id="select-field"> &lt;br>
+        &lt;option selected="selected">Option 01&lt;/option>
+        &lt;option>Option 02&lt;/option>
+        &lt;option>Option 03&lt;/option>
+      &lt;/select>
+    &lt;/div>
+    &lt;div class="six_of_twelve-form">
+    &lt;/div>
+  &lt;/div>
+
+<b>Create a text-area input across the entire row:</b>
+
+  &lt;div class="form-row">
+    &lt;div class="twelve_of_twelve">
+      &lt;label class="text-label" for="text-area">Message:&lt;/label> &lt;br>
+      &lt;textarea class="text-area" id="text-area" name="text-area" cols="" rows="4" placeholder="Enter your message">
+      &lt;/textarea>
+    &lt;/div>
+  &lt;/div>
+
+            </pre>
+        </div>
+      </div>
+
+      <div class="section-container">
+        <div class="section">
+          <h2 class="main-heading">Code</h2>
+          <p>Displaying blocks of code can be cumbersome at times - Blackcat is  here to make it as simple as possible. Wrap your code in &lt;pre> tags with a "box" class, and make sure to use "&lt;" in place of all your opening tags.</p>
+          <pre class="code-box">
+<b>Code as it is displayed:</b>
+
+  &lt;div class="section-container">
+    &lt;div class="section">
+      &lt;h2 class="main-heading">
+        Hello World!
+      &lt;/h2>
+    &lt;/div>
+  &lt;/div>
+
+<b>Code as it looks in your text editor:</b>
+
+  &lt;div class="section-container">
+    &lt;div class="section">
+      &lt;h2 class="main-heading">
+        Hello World!
+      &lt;/h2>
+    &lt;/div>
+  &lt;/div>
+          </pre>
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>

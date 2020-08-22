@@ -22,11 +22,11 @@
         <div class="section-container-top">
           <div class="section-top">
             <ul>
-              <li><a>Item 1</a></li>
-              <li><a>Item 2</a></li>
-              <li><a>Item 3</a></li>
-              <li><a>Item 4</a></li>
-              <li><a>Item 5</a></li>
+              <li><a href="#">Item 1</a></li>
+              <li><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
+              <li><a href="#">Item 4</a></li>
+              <li><a href="#">Item 5</a></li>
               <li class="nav-space"></li>
             </ul>
           </div>
@@ -147,10 +147,13 @@
               <div class="grid-spacer"></div>
               <div class="one_of_twelve"><p>One</p></div>
             </div>
+            <div class="grid-horizontal-example">
+              <div class="twelve_of_twelve"><p>Twelve</p></div>
+            </div>
           </div>
 
           <pre class="code-box">
-<b>Inside a &lt;div class="grid-horizontal">, the grid is set up in divs with classes 'one_of_twelve' <br>through 'eleven_of_twelve'.</b>
+<b>Inside a &lt;div class="grid-horizontal">, the grid is set up in divs with classes 'one_of_twelve' <br>through 'twelve_of_twelve'.</b>
 
   &lt;div class="grid-horizontal">
     &lt;div class="one_of_twelve&lt;/div>
@@ -175,16 +178,16 @@
       <div class="section-container">
         <div class="section">
           <h2 class="main-heading">Typography</h2>
-          <p>Type is all set with 'ems', so font-sizes and spacial relationships can be responsively sized based on a single HTML font-size property. All elements are base 16px, meaning that 1em is eqivelant to 16px, while 2em is equivilant to 32px and so on. Some basic elements included are:</p>
+          <p>Type is all set with 'ems', so font-sizes and spacial relationships can be responsively sized based on a single HTML font-size property. All elements are base 16px, meaning that 1em is eqivelant to 16px, while 2em is equivalent to 32px and so on. Some basic elements included are:</p>
           <ul>
-            <li><a src='#'>anchors</a></li>
+            <li><a href="#">anchors</a></li>
             <li><strong>strong</strong></li>
             <li><i>italic</i></li>
             <li><u>underline</u></li>
             <li><blockquote>"Blockquote"</blockquote></li>
           </ul>
-          <p>The typography base is Roboto served by Google, set at .9em (14.5px) over a 1.75em line height (28px).
-          <p>The headings base is Montserrat, also served by Google. Headings create a family of distinct sizes each with specific letter-spacing, line-height, and margins.</p>
+          <p>The typography base is Roboto sourced from Google Fonts, set at .9em (14.5px) over a 1.75em line height (28px).
+          <p>The headings base is Montserrat, also sourced from Google Fonts. Headings create a family of distinct sizes each with specific letter-spacing, line-height, and margins.</p>
           <div class="heading_examples">
             <h1>Heading One</h1>
             <h2>Heading Two</h2>
@@ -200,11 +203,11 @@
 
 <b>Other styled text tags:</b>
 
-  &lt;strong>Bolded&lt;/strong>
-  &lt;em>Italicized&lt;/em>
-  &lt;a>Colored&lt;/a>
+  &lt;strong>Strong&lt;/strong>
+  &lt;i>Italicized&lt;/i>
+  &lt;a>Links&lt;/a>
   &lt;u>Underlined&lt;/u>
-  &lt;u>Blockquote&lt;/u>
+  &lt;blockquote>Blockquote&lt;/blockquote>
 
 <b>Standard Headings:</b>
 
@@ -391,7 +394,7 @@
       <div class="section-container">
         <div class="section">
           <h2 class="main-heading">Forms</h2>
-          <p>Forms are all divided into rows, which can be split into samller sections using the grid. The most common way to divide rows is in half, using the "six_of_twelve" class. Rows with elements spanning the entire width of the container use the "twelve_of_twelve" class</p>
+          <p>Forms are all divided into rows, which can be split into smaller sections using the grid. The most common way to divide rows is in half, using the "six_of_twelve" class. Rows with elements spanning the entire width of the container use the "twelve_of_twelve" class</p>
 
           <form>
             <legend><h5>Form Heading</h5></legend>
@@ -401,11 +404,11 @@
                   <label class="text-label" for="text-input">
                     Name:
                   </label> <br>
-                  <input class="text-input" id="text-input" type="text" placeholder="Enter your name">
+                  <input class="text-input" type="text" placeholder="Enter your name">
                 </div>
                 <div class="six_of_twelve-form">
                   <label class="text-label" for="text-input">Email:</label> <br>
-                  <input class="text-input" id="text-input" type="text" placeholder="example@mailbox.com">
+                  <input class="text-input" type="text" placeholder="example@mailbox.com">
                 </div>
               </div>
 
@@ -414,7 +417,7 @@
                   <label class="text-label" for="select-field">
                     Select field:
                   </label>
-                  <select class="text-input" id="select-field">
+                  <select class="text-input">
                     <br>
                     <option selected="selected">Option 01</option>
                     <option>Option 02</option>
@@ -432,24 +435,23 @@
                     </label>
                     <br>
                   <div class="radio-input">
-                    <input class="radio-button" id="radio-input" type="radio" name="phone"> Phone
-                    <input class="radio-button" id="radio-input" type="radio" name="text"> Text
-                    <input class="radio-button" id="radio-input" type="radio" name="email"> Email
+                    <input class="radio-button" type="radio" name="contact-method" value="phone"> Phone
+                    <input class="radio-button" type="radio" name="contact-method" value="text"> Text
+                    <input class="radio-button" type="radio" name="contact-method" value="email"> Email
                   </div>
                 </div>
               </div>
 
               <div class="form-row">
-                <div class="twelve_of_twelve">
+                <div class="twelve_of_twelve_form">
                   <label class="text-label" for="text-area">Message:</label> <br>
-                  <textarea class="text-area" id="text-area" name="text-area" cols="" rows="4" placeholder="Enter your message">
-                  </textarea>
+                  <textarea class="text-area" name="text-area" cols="" rows="4" placeholder="Enter your message"></textarea>
                 </div>
               </div>
 
               <div class="form-row">
                 <label for="checkbox-input" class="checked">
-                  <input id="checkbox-input" type="checkbox"> I have read and agree to the styles above
+                  <input type="checkbox"> I have read and agree to the styles above
                 </label>
               </div>
 
@@ -531,13 +533,13 @@
 
 <b>Code as it looks in your text editor:</b>
 
-  &lt;div class="section-container">
-    &lt;div class="section">
-      &lt;h2 class="main-heading">
+  &amp;lt;div class="section-container">
+    &amp;lt;div class="section">
+      &amp;lt;h2 class="main-heading">
         Hello World!
-      &lt;/h2>
-    &lt;/div>
-  &lt;/div>
+      &amp;lt;/h2>
+    &amp;lt;/div>
+  &amp;lt;/div>
           </pre>
         </div>
       </div>

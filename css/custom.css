@@ -183,6 +183,15 @@
 
 .twelve_of_twelve {
   flex: 12;
+  background-color: rgb(215, 215, 215);
+  border-radius: .25em;
+  border: solid 1px #82d19d;
+  text-align: center;
+  font-size: .8em;
+}
+
+.twelve_of_twelve_form {
+  flex: 12;
 }
 
 .img-example {

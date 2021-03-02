@@ -4,7 +4,7 @@ Blackcat is a simple, designer-friendly CSS library which can be utilized in sty
 ## Getting started
 
 To download Blackcat:
-- Clone the repo: `git clone https://github.com/pj-hire/blackcat/blob/master/public/css/blackcat.css`
+- Clone the repo: `git clone https://github.com/pj-hire/blackcat-css/blob/master/public/css/blackcat.css`
 
 
 ### What's in the download?
